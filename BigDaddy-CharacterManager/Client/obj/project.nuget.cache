@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ETz7Kom/0ky9muZ2DhLMz4OCIDkN0J+KivW2xhiyf10/I14LdF5+zCyIPC0dfo0xx4fOeb+mwu0CAXn/UBybxQ==",
+  "success": true,
+  "projectFilePath": "D:\\OneDrive\\BigDaddy-FiveM\\BigDaddy-FiveM\\BigDaddy-Converted\\in progress\\BigDaddy-CharacterManager\\Client\\BigDaddy-CharacterManager.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\darin\\.nuget\\packages\\citizenfx.core.client\\1.0.6030\\citizenfx.core.client.1.0.6030.nupkg.sha512",
+    "C:\\Users\\darin\\.nuget\\packages\\citizenfx.framework.client\\0.2.3\\citizenfx.framework.client.0.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

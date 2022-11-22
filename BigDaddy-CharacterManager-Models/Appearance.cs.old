@@ -1,0 +1,182 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BigDaddy_CharacterManager_Models
+{
+	public class CharacterAppearance
+	{
+		public Appearance appearance { get; set; }
+	}
+
+	public class Appearance
+	{
+		public List<object> tattoos { get; set; }
+		public List<Component> components { get; set; }
+		public Hair hair { get; set; }
+		public List<Prop> props { get; set; }
+		public HeadOverlays headOverlays { get; set; }
+		public int eyeColor { get; set; }
+		public HeadBlend headBlend { get; set; }
+		public FaceFeatures faceFeatures { get; set; }
+		public string model { get; set; }
+	}
+
+	public class Ageing
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class Beard
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class Blemishes
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class Blush
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class BodyBlemishes
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class ChestHair
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class Complexion
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class Component
+	{
+		public int drawable { get; set; }
+		public int texture { get; set; }
+		public int component_id { get; set; }
+	}
+
+	public class Eyebrows
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class FaceFeatures
+	{
+		public float cheeksBoneHigh { get; set; }
+		public float nosePeakSize { get; set; }
+		public float nosePeakLowering { get; set; }
+		public float noseWidth { get; set; }
+		public float chinHole { get; set; }
+		public float eyesOpening { get; set; }
+		public float jawBoneBackSize { get; set; }
+		public float chinBoneLowering { get; set; }
+		public float neckThickness { get; set; }
+		public float chinBoneLenght { get; set; }
+		public float noseBoneHigh { get; set; }
+		public float eyeBrownHigh { get; set; }
+		public float lipsThickness { get; set; }
+		public float noseBoneTwist { get; set; }
+		public float cheeksWidth { get; set; }
+		public float jawBoneWidth { get; set; }
+		public float nosePeakHigh { get; set; }
+		public float chinBoneSize { get; set; }
+		public float cheeksBoneWidth { get; set; }
+		public float eyeBrownForward { get; set; }
+	}
+
+	public class Hair
+	{
+		public int style { get; set; }
+		public int highlight { get; set; }
+		public int color { get; set; }
+	}
+
+	public class HeadBlend
+	{
+		public int skinSecond { get; set; }
+		public float shapeMix { get; set; }
+		public int shapeSecond { get; set; }
+		public int skinFirst { get; set; }
+		public int shapeFirst { get; set; }
+		public float skinMix { get; set; }
+	}
+
+	public class HeadOverlays
+	{
+		public Blemishes blemishes { get; set; }
+		public Beard beard { get; set; }
+		public ChestHair chestHair { get; set; }
+		public Lipstick lipstick { get; set; }
+		public Eyebrows eyebrows { get; set; }
+		public BodyBlemishes bodyBlemishes { get; set; }
+		public Complexion complexion { get; set; }
+		public Ageing ageing { get; set; }
+		public MakeUp makeUp { get; set; }
+		public Blush blush { get; set; }
+		public MoleAndFreckles moleAndFreckles { get; set; }
+		public SunDamage sunDamage { get; set; }
+	}
+
+	public class Lipstick
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class MakeUp
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class MoleAndFreckles
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+
+	public class Prop
+	{
+		public int drawable { get; set; }
+		public int texture { get; set; }
+		public int prop_id { get; set; }
+	}
+
+
+	public class SunDamage
+	{
+		public int style { get; set; }
+		public int color { get; set; }
+		public float opacity { get; set; }
+	}
+}

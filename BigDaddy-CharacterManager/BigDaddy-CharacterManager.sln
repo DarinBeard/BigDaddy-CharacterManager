@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigDaddy-CharacterManager.Client", "Client\BigDaddy-CharacterManager.Client.csproj", "{2735F3BA-64B3-415B-B434-A8E2BB26E7A6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2D39A45B-BF45-4772-9D1C-6792F34ACFB0} = {2D39A45B-BF45-4772-9D1C-6792F34ACFB0}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigDaddy-CharacterManager.Server", "Server\BigDaddy-CharacterManager.Server.csproj", "{2D39A45B-BF45-4772-9D1C-6792F34ACFB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigDaddy-CharacterManager-Models", "..\BigDaddy-CharacterManager-Models\BigDaddy-CharacterManager-Models.csproj", "{2FF74075-A538-4552-BB2C-8B2BCAFD0CD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2735F3BA-64B3-415B-B434-A8E2BB26E7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2735F3BA-64B3-415B-B434-A8E2BB26E7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2735F3BA-64B3-415B-B434-A8E2BB26E7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2735F3BA-64B3-415B-B434-A8E2BB26E7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D39A45B-BF45-4772-9D1C-6792F34ACFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D39A45B-BF45-4772-9D1C-6792F34ACFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D39A45B-BF45-4772-9D1C-6792F34ACFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D39A45B-BF45-4772-9D1C-6792F34ACFB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FF74075-A538-4552-BB2C-8B2BCAFD0CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF74075-A538-4552-BB2C-8B2BCAFD0CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF74075-A538-4552-BB2C-8B2BCAFD0CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF74075-A538-4552-BB2C-8B2BCAFD0CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADE81A2D-4FBC-48C6-B962-A0DE2E73AA73}
+	EndGlobalSection
+EndGlobal

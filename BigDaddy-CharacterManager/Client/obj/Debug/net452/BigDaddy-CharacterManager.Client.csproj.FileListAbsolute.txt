@@ -1,0 +1,22 @@
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Client\bin\Debug\net452\BigDaddy-CharacterManager.Client.net.dll
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Client\bin\Debug\net452\CitizenFX.Core.Client.dll
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.csproj.AssemblyReference.cache
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.AssemblyInfoInputs.cache
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.AssemblyInfo.cs
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.csproj.CoreCompileInputs.cache
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.csproj.CopyComplete
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.net.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\bin\Debug\net452\BigDaddy-CharacterManager.Client.net.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\bin\Debug\net452\CitizenFX.Core.Client.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\bin\Debug\net452\MenuAPI.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\bin\Debug\net452\Newtonsoft.Json.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.csproj.AssemblyReference.cache
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.AssemblyInfoInputs.cache
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.AssemblyInfo.cs
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.csproj.CoreCompileInputs.cache
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.csproj.CopyComplete
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\obj\Debug\net452\BigDaddy-CharacterManager.Client.net.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\bin\Debug\net452\BigDaddy-CharacterManager-Models.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Client\bin\Debug\net452\BigDaddy-CharacterManager-Models.pdb

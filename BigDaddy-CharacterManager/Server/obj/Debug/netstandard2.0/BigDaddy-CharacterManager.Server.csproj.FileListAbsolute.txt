@@ -1,0 +1,19 @@
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.csproj.AssemblyReference.cache
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.AssemblyInfoInputs.cache
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.AssemblyInfo.cs
+D:\repos\BigDaddy-Converted\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.csproj.CoreCompileInputs.cache
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\bin\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.deps.json
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\bin\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.net.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\bin\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.net.pdb
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.csproj.AssemblyReference.cache
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.AssemblyInfoInputs.cache
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.AssemblyInfo.cs
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.csproj.CoreCompileInputs.cache
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.csproj.CopyComplete
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.net.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\obj\Debug\netstandard2.0\BigDaddy-CharacterManager.Server.net.pdb
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\bin\Debug\netstandard2.0\BigDaddy-CharacterManager-Models.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager\Server\bin\Debug\netstandard2.0\BigDaddy-CharacterManager-Models.pdb

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+      <TargetFramework>netstandard2.0</TargetFramework>
+      <DebugType>portable</DebugType>
+      <TargetName>$(AssemblyName).net</TargetName>
+      <DefineConstants>SERVER</DefineConstants>
+    </PropertyGroup>
+  
+    <ItemGroup>
+      <PackageReference Include="CitizenFX.Core.Server" Version="1.0.*" />
+      <PackageReference Include="MySql.Data" Version="8.0.31" />
+  
+      <Compile Include="../Shared/**/*.cs" />
+    </ItemGroup>
+  
+    <ItemGroup>
+      <ProjectReference Include="..\..\BigDaddy-CharacterManager-Models\BigDaddy-CharacterManager-Models.csproj" />
+    </ItemGroup>
+  
+    <ItemGroup>
+      <Reference Include="Newtonsoft.Json">
+        <HintPath>..\Shared\Newtonsoft.Json.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
+  

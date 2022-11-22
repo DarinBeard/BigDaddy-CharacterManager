@@ -1,0 +1,16 @@
+<Project Sdk="CitizenFX.Sdk.Client/0.2.3">
+    <ItemGroup>
+        <Compile Include="../Shared/**/*.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\BigDaddy-CharacterManager-Models\BigDaddy-CharacterManager-Models.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Reference Include="MenuAPI">
+        <HintPath>..\Shared\MenuAPI.dll</HintPath>
+      </Reference>
+      <Reference Include="Newtonsoft.Json">
+        <HintPath>..\Shared\Newtonsoft.Json.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
