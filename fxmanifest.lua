@@ -10,9 +10,6 @@ client_scripts {
 	'Newtonsoft.Json.dll',
 	'MenuAPI.dll',
 	'BigDaddy-CharacterManager-Models.dll',
-	--'config.lua',
-	--'@NativeUI/NativeUI.lua',
-	--'client.lua',
 }
 
 server_scripts {
@@ -20,9 +17,5 @@ server_scripts {
 	'Newtonsoft.Json.dll',
 	'MySql.Data.dll',
 	'BigDaddy-CharacterManager-Models.dll',
-	--'config.lua',
-	--'@mysql-async/lib/MySQL.lua',
-	--'server.lua'
 }
 
---dependency 'NativeUI'
