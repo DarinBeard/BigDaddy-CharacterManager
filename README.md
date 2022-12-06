@@ -11,12 +11,14 @@ https://BigDaddyScripts.com
 YouTube: https://youtube.com/@bigdaddydonzella
 # 
 
+This is a character manager for keeping track of and organizing your characters. You can create, edit, save, update, delete, rename, clone and load your characters. This utilizes fivem-appearance character editor for the creating and editing. So there are two separate resources to install on your server for this to work. Keep reading for all the info you need.
+
 **IMPORTANT**: Run the sql.sql script in your FiveM MySql database to create the table. Do not rename the table or the fields or the script will break
 
 Put this script folder somewhere in your resources and add <code>start BigDaddy-CharacterManager</code> to your server.cfg
 
 Put the fivem-appearance folder somewhere in your resources and add <code>start fivem-appearance</code> to your server.cfg
-
+You can get fivem-appearance here (my forked version that I know works with this manager) https://github.com/DarinBeard/fivem-appearance
 You also need to add the following lines to your server.cfg
 
 <code>
