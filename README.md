@@ -58,5 +58,5 @@ The locale: the name of one file inside locales/, default en, choose the locale 
 ### **CREDITS**:
 The editor (fivem-appearance) was created by pedr0fontoura (https://github.com/pedr0fontoura/fivem-appearance)
 
-This manager has been tested to work with v1.3.1 (their fxmanifest says 1.3.0) at this time.
+This manager has been tested to work with the forked version at https://github.com/DarinBeard/fivem-appearance
 
