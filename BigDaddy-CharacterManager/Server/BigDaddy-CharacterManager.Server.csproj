@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
       <TargetFramework>netstandard2.0</TargetFramework>
       <DebugType>portable</DebugType>
@@ -14,6 +14,7 @@
     </ItemGroup>
   
     <ItemGroup>
+      <ProjectReference Include="..\..\..\BigDaddy-CharacterManager-Models\BigDaddy-CharacterManager-Models.csproj" />
       <ProjectReference Include="..\..\BigDaddy-CharacterManager-Models\BigDaddy-CharacterManager-Models.csproj" />
     </ItemGroup>
   

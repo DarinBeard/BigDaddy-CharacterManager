@@ -1,0 +1,6 @@
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager-Models\bin\Debug\BigDaddy-CharacterManager-Models.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager-Models\bin\Debug\BigDaddy-CharacterManager-Models.pdb
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager-Models\obj\Debug\BigDaddy-CharacterManager-Models.csproj.AssemblyReference.cache
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager-Models\obj\Debug\BigDaddy-CharacterManager-Models.csproj.CoreCompileInputs.cache
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager-Models\obj\Debug\BigDaddy-CharacterManager-Models.dll
+D:\OneDrive\BigDaddy-FiveM\BigDaddy-FiveM\BigDaddy-Converted\in progress\BigDaddy-CharacterManager-Models\obj\Debug\BigDaddy-CharacterManager-Models.pdb

@@ -3,6 +3,7 @@
         <Compile Include="../Shared/**/*.cs" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\..\..\BigDaddy-CharacterManager-Models\BigDaddy-CharacterManager-Models.csproj" />
       <ProjectReference Include="..\..\BigDaddy-CharacterManager-Models\BigDaddy-CharacterManager-Models.csproj" />
     </ItemGroup>
     <ItemGroup>
