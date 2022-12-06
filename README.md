@@ -15,7 +15,7 @@ This is a FiveM character manager for keeping track of and organizing your chara
 
 **IMPORTANT**: Run the sql.sql script in your FiveM MySql database to create the table. Do not rename the table or the fields or the script will break
 
-Put this script folder somewhere in your resources and add <code>start BigDaddy-CharacterManager</code> to your server.cfg
+Download the latest release and unzip the script folder somewhere in your resources and add <code>start BigDaddy-CharacterManager</code> to your server.cfg
 
 Put the fivem-appearance folder somewhere in your resources and add <code>start fivem-appearance</code> to your server.cfg
 You can get fivem-appearance here (my forked version that I know works with this manager) https://github.com/DarinBeard/fivem-appearance
