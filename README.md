@@ -5,13 +5,13 @@
 
 BROUGHT TO YOU BY
 # **BIG DADDY SCRIPTS**
-Many more scripts available at:
+Many more FiveM scripts available at:
 https://BigDaddyScripts.com
 
 YouTube: https://youtube.com/@bigdaddydonzella
 # 
 
-This is a character manager for keeping track of and organizing your characters. You can create, edit, save, update, delete, rename, clone and load your characters. This utilizes fivem-appearance character editor for the creating and editing. So there are two separate resources to install on your server for this to work. Keep reading for all the info you need.
+This is a FiveM character manager for keeping track of and organizing your characters. You can create, edit, save, update, delete, rename, clone and load your characters. This utilizes fivem-appearance character editor for the creating and editing. So there are two separate resources to install on your server for this to work. Keep reading for all the info you need.
 
 **IMPORTANT**: Run the sql.sql script in your FiveM MySql database to create the table. Do not rename the table or the fields or the script will break
 
