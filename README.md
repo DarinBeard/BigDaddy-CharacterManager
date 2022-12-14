@@ -10,6 +10,7 @@ https://BigDaddyScripts.com
 
 YouTube: https://youtube.com/@bigdaddydonzella
 # 
+PLEASE GO HERE TO DOWNLOAD THE MOST RECENT VERSION: https://bigdaddyscripts.com/Products/View/1624/Character-Manager
 
 This is a FiveM character manager for keeping track of and organizing your characters. You can create, edit, save, update, delete, rename, clone and load your characters. This utilizes fivem-appearance character editor for the creating and editing. So there are two separate resources to install on your server for this to work. Keep reading for all the info you need.
 
@@ -54,6 +55,9 @@ The locale: the name of one file inside locales/, default en, choose the locale 
 # 
 ## DEMO https://www.youtube.com/watch?v=t415MK02ZoQ
 # 
+
+## LICENSE
+See included LICENSE file. 
 
 ### **CREDITS**:
 The editor (fivem-appearance) was created by pedr0fontoura (https://github.com/pedr0fontoura/fivem-appearance)
