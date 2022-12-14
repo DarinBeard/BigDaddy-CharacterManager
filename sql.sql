@@ -1,8 +1,9 @@
---don't change the table name or it will break the stuff
 CREATE TABLE `bd_character` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `steam` VARCHAR(50) NULL,
-  `discord` VARCHAR(50) NULL,
-  `data` VARCHAR(1000) NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `steam` varchar(255) DEFAULT NULL,
+  `discord` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `data` longtext,
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `id_UNIQUE` (`id` ASC));
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
