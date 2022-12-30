@@ -3,6 +3,8 @@
 ## A character manager for creating, editing, cloning, saving, deleting, renaming your characters.
 # 
 
+NOTE: THIS REPO IS SLIGHTLY OUT OF DATE AND BEHIND DEVELOPMENT... Please go to https://bigdaddyscripts.com/Products/View/1624/Character-Manager to get the most updated version and find the documentation.
+
 BROUGHT TO YOU BY
 # **BIG DADDY SCRIPTS**
 Many more FiveM scripts available at:
