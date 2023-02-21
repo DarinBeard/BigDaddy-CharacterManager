@@ -34,77 +34,82 @@ namespace BigDaddy_CharacterManager.Client
 
 		private void StartCM()
 		{
-			GetActiveScreenResolution(ref screenW, ref screenH);
-
-			MenuController.MenuToggleKey = (Control)(-1);
-			MenuController.MenuAlignment = MenuController.MenuAlignmentOption.Right;
-			MenuController.AddMenu(menu);
-			menu.ClearMenuItems();
-
-			TriggerServerEvent("BigDaddy-CharacterManager:GetCharacters");
-
-			RegisterCommand("manageme", new Action(OpenMenu), false);
-
-			menu.OnItemSelect += (_menu, _item, _index) =>
+			if (firstRun)
 			{
-				if (_item.ItemData.ToString() == "create")
+				GetActiveScreenResolution(ref screenW, ref screenH);
+
+				MenuController.MenuToggleKey = (Control)(-1);
+				MenuController.MenuAlignment = MenuController.MenuAlignmentOption.Right;
+				MenuController.AddMenu(menu);
+				menu.ClearMenuItems();
+
+				TriggerServerEvent("BigDaddy-CharacterManager:GetCharacters");
+
+				RegisterCommand("manageme", new Action(OpenMenu), false);
+				TriggerEvent("chat:addSuggestion", "/manageme", "Open Character Manager.");
+
+				menu.OnItemSelect += (_menu, _item, _index) =>
 				{
-					Debug.WriteLine("Create Character");
+					if (_item.ItemData.ToString() == "create")
+					{
+					//Debug.WriteLine("Create Character");
 					InputName(true, false);
-					return;
-				}
-				else if (_item.ItemData.ToString() == "edit")
-				{
-					Debug.WriteLine("Edit Character");
+						return;
+					}
+					else if (_item.ItemData.ToString() == "edit")
+					{
+					//Debug.WriteLine("Edit Character");
 					StartEditor(false, false, false);
-					return;
-				}
-				else if (_item.ItemData.ToString() == "clone")
-				{
-					Debug.WriteLine("Clone Character");
+						return;
+					}
+					else if (_item.ItemData.ToString() == "clone")
+					{
+					//Debug.WriteLine("Clone Character");
 					InputName(false, true);
+						return;
+					}
+					else if (_item.ItemData.ToString() == "delete")
+					{
+						submenu.OpenMenu();
+					//Debug.WriteLine("Delete Character Check");
 					return;
-				}
-				else if (_item.ItemData.ToString() == "delete")
-				{
-					submenu.OpenMenu();
-					Debug.WriteLine("Delete Character Check");
-					return;
-				}
-				else if (_item.ItemData.ToString() == "rename")
-				{
-					Debug.WriteLine("Rename Character");
+					}
+					else if (_item.ItemData.ToString() == "rename")
+					{
+					//Debug.WriteLine("Rename Character");
 					Rename();
-					return;
+						return;
 					//save new name to db
 				}
-				else
-				{
-					Debug.WriteLine("Spawning Character");
+					else
+					{
+					//Debug.WriteLine("Spawning Character");
 					//CharacterAppearance data = JsonConvert.DeserializeObject<CharacterAppearance>(_item.ItemData);
 					var thisone = characters.Find(c => c.name == _item.Text.ToString().Replace("~b~", ""));
-					CurrentName = thisone.name;
-					changeCharacter(thisone.id);
-					return;
-				}
-			};
+						CurrentName = thisone.name;
+						changeCharacter(thisone.id);
+						return;
+					}
+				};
 
-			submenu.OnItemSelect += (_menu, _item, _index) =>
-			{
-				if (_item.ItemData.ToString() == "yes")
+				submenu.OnItemSelect += (_menu, _item, _index) =>
 				{
+					if (_item.ItemData.ToString() == "yes")
+					{
 					//delete character
-					Debug.WriteLine("Deleting Character");
+					//Debug.WriteLine("Deleting Character");
 					TriggerServerEvent("BigDaddy-CharacterManager:DeleteCharacter", currentId);
-					currentId = -1;
-					CurrentName = "Unsaved Character";
-					Exports["fivem-appearance"].setPlayerModel("mp_m_freemode_01");
-					Exports["fivem-appearance"].setPlayerAppearance(null);
-					submenu.CloseMenu();
-					menu.OpenMenu();
+						currentId = -1;
+						CurrentName = "Unsaved Character";
+						Exports["fivem-appearance"].setPlayerModel("mp_m_freemode_01");
+						Exports["fivem-appearance"].setPlayerAppearance(null);
+						submenu.CloseMenu();
+						menu.OpenMenu();
 
-				}
-			};
+					}
+				};
+				firstRun = false;
+			}
 		}
 
 		private void SetNewCharacter()
@@ -241,7 +246,7 @@ namespace BigDaddy_CharacterManager.Client
 			{
 				var a = Exports["fivem-appearance"].getPedAppearance(Game.PlayerPed.Handle);
 				string j = JsonConvert.SerializeObject(a, Formatting.None);
-				Debug.WriteLine(j);
+				//Debug.WriteLine(j);
 				Appearance data = JsonConvert.DeserializeObject<Appearance>(j);
 				string model = data.model;
 				data.tattoos = null;
@@ -263,11 +268,14 @@ namespace BigDaddy_CharacterManager.Client
 			Exports["fivem-appearance"].startPlayerCustomization(new Action<Object>(async (appearance) =>
 			{
 				DoScreenFadeOut(1);
+				Tick -= EditingWatcher;
+				await Delay(20);
+				await VisibilityRestore();
 				Game.PlayerPed.Position = initpos;
 				await Delay(1000);
 				DoScreenFadeIn(1000);
 				await Delay(1000);
-				if (!string.IsNullOrEmpty(appearance.ToString()))
+				if (appearance != null && !string.IsNullOrEmpty(appearance.ToString()))
 				{
 					Appearance a = new Appearance();
 					string j = JsonConvert.SerializeObject(appearance, Formatting.None);
@@ -321,7 +329,6 @@ namespace BigDaddy_CharacterManager.Client
 					changeCharacter(currentId);
 				}
 				editing = false;
-				Tick -= EditingWatcher;
 
 			}), config);
 
@@ -335,17 +342,26 @@ namespace BigDaddy_CharacterManager.Client
 
 		private async Task EditingWatcher()
 		{
-			for (int i = 1; i >= 256; i++) {
-				if (NetworkIsPlayerActive(i)) {
+			SetEntityVisible(Game.PlayerPed.Handle, false, false);
+			SetEntityLocallyVisible(Game.PlayerPed.Handle);
 
-					SetEntityVisible(GetPlayerPed(i), false, false);
-					SetEntityVisible(PlayerPedId(), true, true);
-					SetEntityNoCollisionEntity(GetPlayerPed(i), PlayerPedId(), false);
-				}
+			foreach (Ped p in World.GetAllPeds())
+			{
+				p.SetNoCollision(Game.Player.Character, false);
 			}
+
 			HideHudComponentThisFrame(19);
 		}
 
+		private async Task VisibilityRestore()
+		{
+			SetEntityVisible(Game.PlayerPed.Handle, true, false);
+			SetEntityCollision(Game.PlayerPed.Handle, true, true);
+			foreach (Ped p in World.GetAllPeds())
+			{
+				p.SetNoCollision(Game.Player.Character, true);
+			}
+		}
 
 		private void OpenMenu()
 		{

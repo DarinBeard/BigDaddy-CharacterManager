@@ -44,6 +44,10 @@ namespace BigDaddy_CharacterManager.Server
 			{
 				Debug.WriteLine($"BigDaddy-CharacterManager: >> {ex} ");
 			}
+			finally
+			{
+				conn.Close();
+			}
 
 		}
 		public async void SaveNewCharacter([FromSource] Player source, string name, string appearance)
@@ -60,8 +64,7 @@ namespace BigDaddy_CharacterManager.Server
 				if (l.ToLower().Contains("discord:"))
 				{
 					discord = l.ToLower().Replace("discord:", "");
-					break;
-				}
+				} 
 			}
 			try
 			{
@@ -84,6 +87,10 @@ namespace BigDaddy_CharacterManager.Server
 			catch (Exception ex)
 			{
 				Debug.WriteLine($"BigDaddy-CharacterManager: >> {ex} ");
+			}
+			finally
+			{
+				conn.Close();
 			}
 		}
 
@@ -108,6 +115,10 @@ namespace BigDaddy_CharacterManager.Server
 			{
 				Debug.WriteLine($"BigDaddy-CharacterManager: >> {ex} ");
 			}
+			finally
+			{
+				conn.Close();
+			}
 		}
 
 		public async void SaveCharacterName([FromSource] Player source, int id, string name)
@@ -131,6 +142,10 @@ namespace BigDaddy_CharacterManager.Server
 			{
 				Debug.WriteLine($"BigDaddy-CharacterManager: >> {ex} ");
 			}
+			finally
+			{
+				conn.Close();
+			}
 		}
 
 		public async void GetCharacters([FromSource] Player source)
@@ -138,36 +153,68 @@ namespace BigDaddy_CharacterManager.Server
 			string connStr = GetConvar("mysql_connection_string", "");
 			MySqlConnection conn = new MySqlConnection(connStr);
 			string lic = GetPlayerIdentifier(source.Handle, 0);
+
 			List<Character> chars = new List<Character>();
 			try
 			{
 				await conn.OpenAsync();
-
-				//string q = "insert into message (player_name, message_text) values (@player_name, @message)";
 				string q = "SELECT * FROM `bd_character` WHERE `steam` = @steam ORDER BY name";
 				MySqlCommand command = new MySqlCommand(q, conn);
 				command.Parameters.AddWithValue("@steam", lic);
 
-				long rowsNo = (long)await command.ExecuteNonQueryAsync();
+				//Debug.WriteLine($"BigDaddy-CharacterManager:Getting Characters for: {lic}");
+
 				var reader = command.ExecuteReader();
 				if (reader.HasRows)
 				{
 					while (reader.Read())
 					{
-						Character _char = new Character();
-						_char.id = (int)reader["id"];
-						_char.name = reader["name"].ToString();
-						_char.steam = reader["steam"].ToString();
-						_char.discord = reader["discord"].ToString();
-						_char.data = reader["data"].ToString();
-						chars.Add(_char);
+						var id = reader[0];
+						
+						if (id != null)
+						{
+							try
+							{
+								//Debug.WriteLine($"id: {reader[0]} name: {reader[3]}");
+							} catch { }
+							Character _char = new Character();
+							try
+							{
+								_char.id = int.Parse(id.ToString());
+							}
+							catch (Exception ex) { Debug.WriteLine($"id: {ex.Message} {ex.StackTrace}"); }
+							try
+							{
+								_char.name = reader[3].ToString();
+							}
+							catch (Exception ex) { Debug.WriteLine($"name: {ex.Message} {ex.StackTrace}"); }
+							try
+							{
+								_char.steam = reader[1].ToString();
+							}
+							catch (Exception ex) { Debug.WriteLine($"steam: {ex.Message} {ex.StackTrace}"); }
+							try
+							{
+								_char.discord = reader[2].ToString();
+							}
+							catch (Exception ex) { Debug.WriteLine($"discord: {ex.Message} {ex.StackTrace}"); }
+							try
+							{
+								_char.data = reader[4].ToString();
+							}
+							catch (Exception ex) { Debug.WriteLine($"data: {ex.Message} {ex.StackTrace}"); }
+							chars.Add(_char);
+						}
 					}
 				}
 				Debug.WriteLine($"BigDaddy-CharacterManager: Retrieved {chars.Count} characters.");
 			}
 			catch (Exception ex)
 			{
-				Debug.WriteLine($"BigDaddy-CharacterManager: >> {ex} ");
+				Debug.WriteLine($"BigDaddy-CharacterManager: >> {ex.Message} {ex.StackTrace} ");
+			} finally
+			{
+				conn.Close();
 			}
 
 			source.TriggerEvent("BigDaddy-CharacterManager:SetCharacters", JsonConvert.SerializeObject(chars));
