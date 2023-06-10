@@ -40,6 +40,7 @@ namespace BigDaddy_CharacterManager.Client
 
 				MenuController.MenuToggleKey = (Control)(-1);
 				MenuController.MenuAlignment = MenuController.MenuAlignmentOption.Right;
+				MenuController.EnableMenuToggleKeyOnController = false;
 				MenuController.AddMenu(menu);
 				menu.ClearMenuItems();
 
